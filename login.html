@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Waste-Management-System</title>
+      <!-- Favicons -->
+      <link rel="shortcut icon" href="./asset/img/favicon.png" type="image/x-icon">
+      <!-- Google Font: Source Sans Pro -->
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+      <!-- Font Awesome -->
+      <link rel="stylesheet" href="asset/fontawesome/css/all.min.css">
+      <!-- Theme style -->
+      <link rel="stylesheet" href="asset/css/adminlte.min.css">
+   </head>
+   <body class="hold-transition login-page">
+      <div class="login-box">
+         <!-- /.login-logo -->
+         <div class="card card-outline card-success">
+            <div class="card-header text-center">
+               <a href="index.html" class="brand-link">
+               <img src="./asset/img/OL1V2Q0.jpg" alt="Logo" width="200">
+               </a>
+            </div>
+            <div class="card-body" >
+               <!-- <form action="#" method="post"> -->
+                  <div class="input-group mb-3">
+                     <input type="text" class="form-control" placeholder="Username">
+                     <div class="input-group-append">
+                        <div class="input-group-text">
+                           <span class="fas fa-user"></span>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="input-group mb-3">
+                     <input type="password" class="form-control" placeholder="Password">
+                     <div class="input-group-append">
+                        <div class="input-group-text">
+                           <span class="fas fa-lock"></span>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- <div class="row">
+                     <div class="col-6"> -->
+                        <!-- <button type="submit" class="btn btn-block" style="background-color: rgba(28,153,84);color: rgb(235,235,235)">Login</button> -->
+
+                        
+                        <!-- <a href="./user/records.html">
+                           <button type="submit" class="btn btn-block" style="background-color: rgba(28,153,84);color: rgb(235,235,235)">Login</button>
+                         </a> -->
+                         
+                     <!-- </div>
+                     <div class="col-6">
+                        <a href="./member/records.html" class="btn btn-block" style="background-color: rgba(28,153,84);color: rgb(235,235,235)">Register Account</a>
+                     </div> -->
+                     <div class="row">
+                        <div class="col-6" style="position: relative;">
+                            <button class="btn btn-block login-btn" style="background-color: rgb(47, 191, 204); color: rgb(235, 235, 235)"
+                                onmouseover="showButtons()"
+                                onmouseout="hideButtons()">Login</button>
+                            <div class="buttons-hidden" style="display: none; position: absolute; top: 125%; left: 10px; width: 90%; background-color: rgba(28, 153, 84);"
+                                id="hidden-buttons">
+                                <a href="./user/records.html">
+                                    <button class="btn btn-block" style="background-color: rgb(47, 191, 204); color: rgb(235, 235, 235)">User</button>
+                                </a>
+                                <a href="./admin/index.html">
+                                <button class="btn btn-block" style="background-color: rgb(81, 173, 194); color: rgb(235, 235, 235)">Admin</button>
+                              </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- <script>
+                        function showButtons() {
+                            document.getElementById('hidden-buttons').style.display = 'block';
+                        }
+                    
+                        function hideButtons() {
+                            document.getElementById('hidden-buttons').style.display = 'none';
+                        }
+                    </script> -->
+                    <script>
+                     function showButtons() {
+                       // Show the hidden buttons
+                       document.getElementById('hidden-buttons').style.display = 'block';
+                     
+                       // Make the hidden buttons clickable
+                       document.getElementById('hidden-buttons').addEventListener('click', function(event) {
+                         // Get the button that was clicked
+                         var button = event.target;
+                     
+                         // If the button is a link, navigate to the href
+                         if (button.tagName === 'A') {
+                           window.location.href = button.href;
+                         }
+                       });
+                     }
+                     </script>
+                    
+                  </div>
+               </form>
+            </div>
+            <!-- /.card-body -->
+         </div>
+         <!-- /.card -->
+      </div>
+      <!-- /.login-box -->
+   </body>
+</html>
